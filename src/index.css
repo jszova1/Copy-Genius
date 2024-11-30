@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-black text-white font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-white;
+  }
+}
+
+@layer components {
+  .section-dark {
+    @apply bg-black text-white;
+  }
+
+  .section-darker {
+    @apply bg-dark-secondary text-white;
+  }
+
+  .card-dark {
+    @apply bg-dark-secondary text-white rounded-xl p-6 transition-all duration-300 hover:shadow-xl border border-gray-800;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+}
+
+/* Rest of your existing styles */
